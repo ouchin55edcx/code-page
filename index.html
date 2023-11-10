@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Python</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        
+        <header class="header">
+
+            <div class="title">
+                <h1>mx</h1>
+            </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">project</a></li>
+                    <li><a href="">skill</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+
+        <div class="code-desc">
+
+
+            <section class="content">
+
+
+                <div class="barcode">
+                    <div class="lag">
+                        <h2>python</h2>
+                    </div>
+                    <div class="div">
+                        <div id="copy-container">
+                           <button onclick="copyText()" style="background-color: rgb(84, 77, 77);"><img src="img/Vector.png" alt=""></button >
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="code-div">
+
+                    <code class="text-code">
+                        <span class="one">from</span> sklearn.linear_model <span class="one">import</span> LinearRegression <br>
+                        <span>from</span> sklearn.model_selection  <span class="one">import</span> train_test_split <br>
+                        <span class="one">import</span> numpy as np <br>
+                            <br>
+                            <br>
+                        <span class="two"># Generate random data </span><br>
+                        X = np.random.rand(100, 1)
+                        y = 2 * X + 1 + 0.1 * np.random.rand(100, 1)
+                            <br>
+                            <br>
+                        <span class="two"># Split data into training and testing sets</span> <br>
+                        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+                            <br>
+                            <br>
+                        <span class="two"># Create and train a linear regression model </span><br>
+                        model = LinearRegression()
+                        model.fit(X_train, y_train)
+                            <br>
+                            <br>
+
+                        <span class="two"> # Make predictions and calculate the model's score on the test data <br></span>
+                        y_pred = model.predict(X_test)
+                        score = model.score(X_test, y_test)
+
+                    </code>
+
+                </div>
+
+            </section>
+
+
+            <div class="desscription">
+                <div class="des-title">
+                    <h1>
+                        Simple Linear Regression <br>
+                        Model for Data Prediction
+
+                    </h1>
+                </div>
+                <div class="parag-desc">
+                    <p>
+                        This code performs a simple linear regression task. <br>
+                        It generates random data, splits it into training and <br>
+                        sets, creates a linear regression model, trains the testing <br>
+                        model on the training data, makes predictions on the test data,<br>
+                        sets, creates a linear regression model, trains the testing <br> model on the training data,
+                        makes predictions on the test data, <br>
+                        model on the training data, makes predictions on the test data, <br>
+                        sets, creates a linear regression model, trains the testing <br>
+                        and calculates the model's score on the test data. <br>
+                        Linear regression is a simple method for modeling the <br>
+                        relationship between a dependent variable and one <br>
+                        or more independent variables.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

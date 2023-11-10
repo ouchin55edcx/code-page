@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Itim&family=Nunito+Sans:opsz,wght@6..12,500&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+
+
+}
+body{
+    background-color: #0303034a;
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+div.title{
+
+    color: white;
+    font-size: 2rem;
+    font-family: "irish grover";
+    text-transform: uppercase;
+    position: relative;
+    content: "";
+    left: 2rem;
+
+
+}
+
+nav ul {
+
+    display: flex;
+    gap: 2rem;
+    text-decoration: none;
+    margin : 1rem 5rem 1rem 0;
+    font-family: "irish grover";
+    text-transform: capitalize;
+    font-size: 1.75rem;
+
+
+
+}
+nav ul li{
+     text-decoration: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: "irish grover";
+    
+}
+
+section .barcode{
+    width: 35vw;
+    height: 3rem;
+    border-radius: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(84, 77, 77);
+    
+}
+
+section .barcode .div{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    content: "";
+    right: 1rem;
+
+    
+}
+.div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.lag{
+    position: relative;
+    content: "";
+    left: 1rem;
+    top: 0.5rem;
+
+}
+
+.div img{
+    height: 20px;
+    width: auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    /* gap: .5rem;   */
+
+}
+
+.barcode{
+    position: relative;
+    content: "";
+    top: 2.25rem;
+}
+.content{
+    position: relative;
+    content: "";
+    left: 5rem;
+
+
+}
+
+.code-div{
+    width: 35vw;
+    height: 80vh;
+    background-color: black;
+    border-radius: 1rem ;
+}
+.text-code{
+    position: relative;
+    content: "";
+    top: 4.5rem;
+    left: .15rem;
+    color: aliceblue;
+    font-size: 1rem;
+}
+.one{
+    color: blue;
+
+}
+.two{
+    color: green;
+}
+
+.code-desc{
+    display: flex;
+    justify-content: space-around;
+}
+
+.desscription{
+    position: relative;
+    content: "";
+    top: 2rem;
+}
+.des-title{
+    font-size: 1.25rem;
+    color: white;
+}
+.parag-desc{
+    position: relative;
+    content: "";
+    top: 5rem;
+
+    font-size:1.5rem;
+    
+}
+
+@media screen and  (max-width: 686px) {
+
+    .code-desc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .code-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin: auto 0;
+        width: 80%;
+
+    }
+
+    .barcode{
+        width: 100%;
+    }
+
+    
+    
+}
+
+
+
